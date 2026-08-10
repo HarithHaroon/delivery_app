@@ -1,0 +1,142 @@
+{
+  "project_info": {
+    "project_number": "506131457068",
+    "project_id": "bait-alaamal",
+    "storage_bucket": "bait-alaamal.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:506131457068:android:fe3f58d8d4263825c2dd89",
+        "android_client_info": {
+          "package_name": "com.rawabit.delivery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "506131457068-5cl21f5r3tet43gnph5rpn40o63ubdhb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRQRcDJGtbK7t9cfMAbziPNjUM5MCFd6c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "506131457068-5cl21f5r3tet43gnph5rpn40o63ubdhb.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "506131457068-53d50nn09r91hsn1l1thvnvb4vo4u61o.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.rawabit.vendor"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:506131457068:android:ae92b280621734ffc2dd89",
+        "android_client_info": {
+          "package_name": "com.rawabit.user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "506131457068-0kkib1k09laroomksfsllk4likoj2nfq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rawabit.user",
+            "certificate_hash": "efa36ad994fe2c2c3a778186b4646c92ecbac143"
+          }
+        },
+        {
+          "client_id": "506131457068-6vg2ch9rll3537mq18an9os7qdfhrik1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rawabit.user",
+            "certificate_hash": "498b0a8a3e5932c4ebebd1934eb6007e07622aa4"
+          }
+        },
+        {
+          "client_id": "506131457068-g9c8dkvrdppcsdakujtopdlrhvr1l2np.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rawabit.user",
+            "certificate_hash": "5d4c7d0352c16d56c405b6916c08c1655b145763"
+          }
+        },
+        {
+          "client_id": "506131457068-5cl21f5r3tet43gnph5rpn40o63ubdhb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRQRcDJGtbK7t9cfMAbziPNjUM5MCFd6c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "506131457068-5cl21f5r3tet43gnph5rpn40o63ubdhb.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "506131457068-53d50nn09r91hsn1l1thvnvb4vo4u61o.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.rawabit.vendor"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:506131457068:android:1f58a23af3d50f01c2dd89",
+        "android_client_info": {
+          "package_name": "com.rawabit.vendor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "506131457068-5cl21f5r3tet43gnph5rpn40o63ubdhb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRQRcDJGtbK7t9cfMAbziPNjUM5MCFd6c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "506131457068-5cl21f5r3tet43gnph5rpn40o63ubdhb.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "506131457068-53d50nn09r91hsn1l1thvnvb4vo4u61o.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.rawabit.vendor"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,85 @@
+import 'dart:io';
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:provider/provider.dart';
+import 'package:rawabit_delivery_app/common/basewidgets/custom_button_widget.dart';
+import 'package:rawabit_delivery_app/common/basewidgets/custom_snackbar_widget.dart';
+import 'package:rawabit_delivery_app/features/splash/controllers/splash_controller.dart';
+import 'package:rawabit_delivery_app/utill/dimensions.dart';
+import 'package:rawabit_delivery_app/utill/images.dart';
+import 'package:rawabit_delivery_app/utill/styles.dart';
+import 'package:url_launcher/url_launcher_string.dart';
+
+class UpdateScreen extends StatelessWidget {
+  const UpdateScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Padding(
+          padding: EdgeInsets.all(Dimensions.paddingSizeLarge),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Image.asset(
+                color: Theme.of(context).primaryColor,
+                Images.update,
+                width: MediaQuery.of(context).size.height * 0.4,
+                height: MediaQuery.of(context).size.height * 0.4,
+              ),
+              SizedBox(height: MediaQuery.of(context).size.height * 0.01),
+
+              Text(
+                'update'.tr,
+                style: robotoBold.copyWith(
+                  fontSize: MediaQuery.of(context).size.height * 0.023,
+                  color: Theme.of(context).primaryColor,
+                ),
+                textAlign: TextAlign.center,
+              ),
+              SizedBox(height: MediaQuery.of(context).size.height * 0.01),
+
+              Text(
+                'your_app_is_deprecated'.tr,
+                style: robotoRegular.copyWith(
+                  fontSize: MediaQuery.of(context).size.height * 0.0175,
+                  color: Theme.of(context).disabledColor,
+                ),
+                textAlign: TextAlign.center,
+              ),
+              SizedBox(height: MediaQuery.of(context).size.height * 0.04),
+
+              CustomButtonWidget(
+                btnTxt: 'update_now'.tr,
+                onTap: () async {
+                  String? appUrl = 'https://google.com';
+                  if (Platform.isAndroid) {
+                    appUrl = Get.find<SplashController>()
+                        .configModel
+                        ?.deliveryManAppVersionControl
+                        ?.forAndroid
+                        .link;
+                  } else if (Platform.isIOS) {
+                    appUrl = Provider.of<SplashController>(
+                      context,
+                      listen: false,
+                    ).configModel?.deliveryManAppVersionControl?.forIos.link;
+                  }
+                  if (await canLaunchUrlString(appUrl!)) {
+                    launchUrlString(
+                      appUrl,
+                      mode: LaunchMode.externalApplication,
+                    );
+                  } else {
+                    showCustomSnackBarWidget('${'can_not_launch'.tr}  $appUrl');
+                  }
+                },
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
